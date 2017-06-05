@@ -5,7 +5,6 @@
 }
 
 body {
-    margin: 0;
     background-color: rgb(28,28,28);
     color: white;
 }
@@ -22,11 +21,6 @@ p {
 
 h1 {
     text-align: center;
-}
-
-img {
-    padding-top: 40px;
-    width: 50%;
 }
 
 ul.top-nav {
@@ -92,7 +86,7 @@ ul.top-nav li.right {
     background-position: center;
     background-size: cover;
     display: inline-block;
-    margin-top: 75px;
+    margin-top: 25px;
 }
 
 .about-me .cartoon {  /*image img */
@@ -100,7 +94,8 @@ ul.top-nav li.right {
     background-color: rgb(0,0,0,1);
     width: 25%;
     padding: 0px;
-    margin: 25px;
+    margin-left: 45px;
+    margin-top: 10px;
     border-radius: 50%;
     border: 4px solid rgb(37, 244, 227);
 }
@@ -129,16 +124,16 @@ ul.top-nav li.right {
 }
 
 .funny-cartoon {
-  background-image: url(images/rising-sun.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    background-image: url(images/rising-sun.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .funny-cartoon .left-leela {
     display: inline-block;
     margin: 10px;
     padding: 0px;
-    width: 35%;
+    width: 30%;
     border-radius: 25%;
     border: 4px solid gold;
 }
@@ -146,15 +141,62 @@ ul.top-nav li.right {
 .funny-cartoon .right-leela {
     display: inline-block;
     float: right;
-    margin: 10px;
+    margin-right: 40px;
     padding: 0px;
-    width: 35%;
+    width: 30%;
     border-radius: 25%;
     border: 4px solid rgb(37, 244, 227);
 }
 
+/*
+div.gallery {
+    border: 1px solid #ccc;
+
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 30%;
+    display: inline-grid;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+.responsive {
+width: 100%;
+}
+}
+
+.clearfix:after {
+content: "";
+display: table;
+clear: both;
+}
+
+*/
+
 @media screen and (max-width: 600px){
     ul.topnav li.right,
     ul.topnav li {float: none;}
-
 }
