@@ -1,3 +1,7 @@
+h3 {
+  text-align: center;
+}
+
 .header {
   min-height: 90px;
 }
@@ -35,9 +39,12 @@
 }
 
 .carousel-caption {
-  color:black;
+  color: red;
 }
 
+.thumbnail {
+  background-color: honeyDew;
+}
 /*
 *, *:before, *:after {
     -webkit-text-size-adjust: border-box;
