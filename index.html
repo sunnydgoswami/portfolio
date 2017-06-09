@@ -3,14 +3,21 @@
 <meta charset="utf-8"
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sunny Goswami's Portfolio</title>
+<!-- add favicon -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css?family=Oswald:700|Patua+One|Roboto+Condensed:700" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="normalize.css">
 <link rel="stylesheet" type="text/css" href="style.css">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+<script src="jquery.waypoints.min.js"></script>
+
 </head>
 <body>
-<div class="container" data-spy="scroll" data-target=".navbar" data-offset="1000">
+<div class="container">
     <nav id="myNavBar" role="navigation" class="navbar navbar-default navbar-fixed-top">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse">
@@ -36,11 +43,12 @@
 </div>
 
 <div class="container">
+
     <div class="jumbotron">
           <h1>Work In Progress...</h1>
           <p>I am currently in the process of reaching the mastery level of all things Front-End Web Development. I look forward
             to helping yourself or your organization reach its' desired outcome with a focus on quality and design. Until then
-            enjoy-->turn into link to snake online game.</p>
+            enjoy, <a href="http://patorjk.com/games/snake/" target="_blank">Snake!</a></p>
     </div>
 
     <div class="row" id="aboutSec">
@@ -62,7 +70,7 @@
                             <p>Donec id elit non mi porta gravida at eget metus.
                               Nullam id dolor id nibh ultricies vehicula. Cras
                               justo odio, dapibus ac facilisis in quam.</p>
-                            <p><center><a href="#" class="btn btn-primary">Share</a> <a href="#" class="btn btn-default">Download</a></center></p>
+                            <p><center><a href="#" class="btn btn-default">Download</a></center></p>
                       </div>
                 </div>
           </div>
@@ -74,7 +82,7 @@
                             <p>Donec id elit non mi porta gravida at eget metus.
                               Nullam id dolor id nibh ultricies vehicula. Cras
                               justo odio, dapibus ac facilisis in quam.</p>
-                            <p><center><a href="#" class="btn btn-primary">Share</a> <a href="#" class="btn btn-default">Download</a></center></p>
+                            <p><center><a href="#" class="btn btn-default">Download</a></center></p>
                       </div>
                 </div>
           </div>
@@ -86,7 +94,7 @@
                             <p>Donec id elit non mi porta gravida at eget metus.
                               Nullam id dolor id nibh ultricies vehicula. Cras
                               justo odio, dapibus ac facilisis in quam.</p>
-                            <p><center><a href="#" class="btn btn-primary">Share</a> <a href="#" class="btn btn-default">Download</a></center></p>
+                            <p><center><a href="#" class="btn btn-default">Download</a></center></p>
                       </div>
                 </div>
           </div>
@@ -98,64 +106,71 @@
                             <p>Donec id elit non mi porta gravida at eget metus.
                               Nullam id dolor id nibh ultricies vehicula. Cras
                               justo odio, dapibus ac facilisis in quam.</p>
-                            <p><center><a href="#" class="btn btn-primary">Share</a> <a href="#" class="btn btn-default">Download</a></center></p>
+                            <p><center><a href="#" class="btn btn-default">Download</a></center></p>
                       </div>
                 </div>
           </div>
     </div>
 
-    <div class="bsCarousel" id="blog">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Carousel indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <!-- Wrapper for carousel items -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="images/blog-background.jpg" alt="Blog Post 1">
-                    <div class="carousel-caption">
-                            <h3>Blog Post: TITLE</h3>
-                            <blockquote class="pull-right">
-                                  <p>The world is a dangerous place to live; not because of the people who are evil,
-                                     but because of the people who don't do anything about it.</p>
-                                      <small class="by">by <cite class="by">Albert Einstein</cite></small>
-                            </blockquote>
-                    </div>
+    <div class='row'>
+          <div class='col-md-offset-2 col-md-8' id="blog">
+                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+            <!-- Bottom Carousel Indicators -->
+                      <ol class="carousel-indicators">
+                            <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#quote-carousel" data-slide-to="1"></li>
+                            <li data-target="#quote-carousel" data-slide-to="2"></li>
+                      </ol>
+            <!-- Carousel Slides / Quotes -->
+                      <div class="carousel-inner">
+              <!-- Quote 1 -->
+                            <div class="item active">
+                                   <blockquote>
+                                        <div class="row">
+                                              <div class="col-sm-3 text-center">
+                                                    <img class="img-circle" src="images/albert-enstein-cartoon.png" style="width: 150px;height:165px;">
+                                              </div>
+                                              <div class="col-sm-9">
+                                                    <p>"Imagination is more important than knowledge.""</p>
+                                                    <small>Albert Enstein</small>
+                                              </div>
+                                        </div>
+                                   </blockquote>
+                            </div>
+              <!-- Quote 2 -->
+                            <div class="item">
+                                   <blockquote>
+                                        <div class="row">
+                                              <div class="col-sm-3 text-center">
+                                                    <img class="img-circle" src="images/albert-enstein-cartoon.png" style="width: 150px;height:165px;">
+                                              </div>
+                                              <div class="col-sm-9">
+                                                    <p>"The most beautiful thing we can experience is the mysterious. It is the source of all true art and science.""</p>
+                                                    <small>Albert Enstein</small>
+                                              </div>
+                                        </div>
+                                   </blockquote>
+                            </div>
+              <!-- Quote 3 -->
+                            <div class="item">
+                                   <blockquote>
+                                        <div class="row">
+                                              <div class="col-sm-3 text-center">
+                                                    <img class="img-circle" src="images/albert-enstein-cartoon.png" style="width: 150px;height:165px;">
+                                              </div>
+                                              <div class="col-sm-9">
+                                                    <p>"The most beautiful thing we can experience is the mysterious. It is the source of all true art and science.""</p>
+                                                    <small>Albert Enstein</small>
+                                              </div>
+                                        </div>
+                                   </blockquote>
+                            </div>
+                      </div>
+            <!-- Carousel Buttons Next/Prev -->
+                      <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                      <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
                 </div>
-                <div class="item">
-                    <img src="images/blog-background.jpg" alt="Blog Post 2">
-                    <div class="carousel-caption">
-                            <h3>Blog Post: TITLE</h3>
-                            <blockquote class="pull-right">
-                                  <p>The world is a dangerous place to live; not because of the people who are evil,
-                                     but because of the people who don't do anything about it.</p>
-                                      <small class="by">by <cite class="by">Albert Einstein</cite></small>
-                            </blockquote>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="images/blog-background.jpg" alt="Blog Post 3">
-                    <div class="carousel-caption">
-                            <h3>Blog Post: TITLE</h3>
-                            <blockquote class="pull-right">
-                                  <p>The world is a dangerous place to live; not because of the people who are evil,
-                                     but because of the people who don't do anything about it.</p>
-                                      <small class="by">by <cite class="by">Albert Einstein</cite></small>
-                            </blockquote>
-                    </div>
-                </div>
-            </div>
-            <!-- Carousel controls -->
-            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="carousel-control right" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-        </div>
+          </div>
     </div>
 
     <div class="row" id="blogContent">
@@ -167,7 +182,7 @@
                                   <h3>Blog Post: TITLE</h3>
                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#blog1">Read More</button>
+                                  <center><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#blog4">Read More</button></center>
                                   <div id="blog1" class="collapse">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -196,7 +211,7 @@
                                   <h3>Blog Post: TITLE</h3>
                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#blog2">Read More</button>
+                                  <center><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#blog4">Read More</button></center>
                                   <div id="blog2" class="collapse">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -225,7 +240,7 @@
                                   <h3>Blog Post: TITLE</h3>
                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#blog3">Read More</button>
+                                  <center><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#blog4">Read More</button></center>
                                   <div id="blog3" class="collapse">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -243,7 +258,8 @@
                                   </div>
                             </div>
                             <p><center><a href="#" class="btn btn-primary">Share</a> <a href="#" class="btn btn-default">Download</a></center></p>
-                      </div>                </div>
+                      </div>
+                </div>
           </div>
           <div class="col-xs-6">
                 <div class="thumbnail">
@@ -253,7 +269,7 @@
                                   <h3>Blog Post: TITLE</h3>
                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#blog4">Read More</button>
+                                  <center><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#blog4">Read More</button></center>
                                   <div id="blog4" class="collapse">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -311,11 +327,6 @@
 
 </div>
 
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
 
