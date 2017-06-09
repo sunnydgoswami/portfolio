@@ -24,6 +24,11 @@ a {
     font-size: 20px;
 }
 
+.icon {
+  margin-top: -14px;
+}
+
+
 a:hover,a:focus {
     text-decoration:none;
     color:#26a5d3;
