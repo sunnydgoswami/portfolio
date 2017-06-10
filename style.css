@@ -133,6 +133,10 @@ a:hover,a:focus {
     float: left;
     margin-right: 10px;
 }
+
+small {
+  color: red;
+}
 /**
   MEDIA QUERIES
 */
