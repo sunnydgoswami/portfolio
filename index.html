@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
-<meta charset="utf-8"
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sunny Goswami's Portfolio</title>
 <link rel="icon" href="images/bender-icon (1).png" type="image/png" size="16x16">
@@ -17,35 +18,37 @@
 <script src="jquery.waypoints.min.js"></script>
 
 </head>
-<body>
-<div class="container">
-    <nav id="myNavBar" role="navigation" class="navbar navbar-default navbar-fixed-top">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html"><img class="icon" src="images/Peter-Griffin-Football-head-icon.png" alt="logo"></a>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="menu">
+          <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img class="icon" src="images/Peter-Griffin-Football-head-icon.png" alt="logo"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav">
+                      <li class="hidden"><a class="page-scroll" href="#"></a></li>
+                      <li><a class="page-scroll "href="#home">Home</a></li>
+                      <li><a class="page-scroll "href="#aboutSec">About Me</a></li>
+                      <li><a class="page-scroll" href="#work">Work</a></li>
+                      <li><a class="page-scroll" href="#blog">Blog</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                      <li><a id="contactMeButton" href="#contact">Contact Me!</a></li>
+                </ul>
+          </div>
         </div>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="#aboutSec">About Me</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#blog">Blog</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a id="contactMeButton" href="#contact">Contact Me!</a></li>
-            </ul>
-        </div>
-    </nav>
-</div>
+</nav>
 
 <div class="container">
 
-    <div class="jumbotron">
+    <div class="jumbotron" id="home">
           <h1>Work In Progress...</h1>
           <p>I am currently in the process of reaching the mastery level of all things Front-End Web Development. I look forward
             to helping yourself or your organization reach its' desired outcome with a focus on quality and design. Until then
@@ -315,7 +318,7 @@
                                 <button type="submit" class="btn btn-default"><h4>Send Message<h4></button>
                             </form>
                             <hr>
-                            <h3>Our Social Sites</h3>
+                            <h3>Social Network Sites</h3>
                             <ul class="list-inline banner-social-buttons">
                                   <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter"> <span class="network-name">Twitter</span></i></a></li>
                                   <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
