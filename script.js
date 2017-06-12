@@ -30,6 +30,18 @@ $(function() {
 });
 
 
+$(document).ready(function() {
+    $(window).scroll(function() {
+        $('.hideme').each(function(i) {
+            var bottomOfObject = $(this).offset().top + $(this).outerHeight();
+            var bottomOfWindow = $(window).scrollTop() + $(window).height();
+
+            if(bottomOfWindow > bottomOfObject) {
+              $(this).animate({'opacity':'1'},2000);
+            }
+        });
+    });
+});
 
 
 // When the DOM is ready, run this function

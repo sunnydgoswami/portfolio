@@ -133,10 +133,6 @@ a:hover,a:focus {
     float: left;
     margin-right: 10px;
 }
-
-small {
-  color: red;
-}
 /**
   MEDIA QUERIES
 */
@@ -196,6 +192,10 @@ textarea.form-control{
 
 #blogContent {
     padding-bottom: 60px;
+}
+
+.hideme {
+    opacity: 0;
 }
 
 
