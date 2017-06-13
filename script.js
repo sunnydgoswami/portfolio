@@ -3,6 +3,8 @@
 //     element: document.getElementById('aboutSec'),
 //     handler: function(direction) {
 //       alert('I am 20px from the top ' + 'Direction: ' + direction)
+//       $('navOptions').removeClass('selected')
+//       $('fsfdfs').addClass('selected')
 //     },
 //     offset:20
 //   })
@@ -29,7 +31,7 @@ $(function() {
     });
 });
 
-
+//fade in scroll hideme function
 $(document).ready(function() {
     $(window).scroll(function() {
         $('.hideme').each(function(i) {
